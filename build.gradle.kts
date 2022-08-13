@@ -30,6 +30,13 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("org.springframework.boot:spring-boot-starter-security")
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-api
+    implementation("io.jsonwebtoken:jjwt-api:0.11.5")
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-impl
+    runtimeOnly("io.jsonwebtoken:jjwt-impl:0.11.5")
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-gson
+    implementation("io.jsonwebtoken:jjwt-gson:0.11.5")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("org.postgresql:postgresql")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
