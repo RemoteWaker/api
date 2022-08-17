@@ -14,6 +14,8 @@ class Device {
 
     var name: String? = null
 
+    var isUp: Boolean? = null
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonBackReference
     var user: User? = null
