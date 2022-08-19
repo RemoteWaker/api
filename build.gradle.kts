@@ -37,6 +37,7 @@ dependencies {
     runtimeOnly("io.jsonwebtoken:jjwt-impl:0.11.5")
     // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-gson
     implementation("io.jsonwebtoken:jjwt-gson:0.11.5")
+    implementation("org.springframework.integration:spring-integration-mqtt:5.5.14")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("org.postgresql:postgresql")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")

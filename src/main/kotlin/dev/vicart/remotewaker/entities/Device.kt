@@ -19,4 +19,7 @@ class Device {
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonBackReference
     var user: User? = null
+
+    @OneToMany(mappedBy = "device")
+    var computers: List<Computer>? = null
 }
